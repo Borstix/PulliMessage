@@ -17,8 +17,14 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     pmnetworking.cpp \
-    pmclient.cpp
+    pmclient.cpp \
+    pmservercore.cpp
 
 HEADERS += \
     pmnetworking.h \
-    pmclient.h
+    pmclient.h \
+    pmservercore.h
+
+DISTFILES +=
+
+include(./qtservice/qtservice.pri)
